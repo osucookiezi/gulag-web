@@ -1,0 +1,86 @@
+<p>{% extends 'base.html' %} {% block title %} Verify {% endblock %} {% block content %}</p>
+<div class="main-block is-marginless is-paddingless is-auth">
+<div class="columns is-reset is-weeb">
+<div class="column title-block">
+<div class="titlewithsub">
+<h1 class="title is-left">How to verify your account</h1>
+<h2 class="subtitle">What do you mean? This must be easy right?</h2>
+</div>
+</div>
+<div class="column icon-block">&nbsp;</div>
+</div>
+<div class="columns is-reset is-lcentered is-block">
+<div class="box is-padding">
+<div class="bordertitle">
+<div class="titlewithsub">
+<h1 class="title is-left">Verification</h1>
+<h2 class="subtitle">Follow these three simple steps to get started playing {{ appName() }}!</h2>
+</div>
+</div>
+<div class="howto-content">
+<div class="columns is-paddingless is-marginless">
+<div id="howto" class="column"><img class="thumbnail" src="/static/images/required.png" />
+<div class="howto-info is-flex">
+<div class="big-number is-flex is-lcentered is-vcentered">
+<div class="howto-number">1</div>
+</div>
+<div class="howto-withsub">
+<h1 class="title is-left">Add -devserver cookiezi.gay to a shortcut</h1>
+<h2 class="subtitle">This will connect you to the server</h2>
+</div>
+</div>
+</div>
+<div id="howto" class="column"><img class="thumbnail" src="/static/images/required.png" />
+<div class="howto-info is-flex">
+<div class="big-number is-flex is-lcentered is-vcentered">
+<div class="howto-number">2</div>
+</div>
+<div class="howto-withsub">
+<h1 class="title is-left">Switch to {{ appName() }}</h1>
+<h2 class="subtitle"><strong>1.</strong>open osu!</h2>
+</div>
+</div>
+</div>
+<div id="howto" class="column"><img class="thumbnail" src="/static/images/required.png" />
+<div class="howto-info is-flex">
+<div class="big-number is-flex is-lcentered is-vcentered">
+<div class="howto-number">3</div>
+</div>
+<div class="howto-withsub">
+<h1 class="title is-left">Login to your account</h1>
+<h2 class="subtitle">Login to your {{ appName() }} account and you should be done!</h2>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="bordertitle">
+<div class="titlewithsub">
+<h1 class="title is-left">Oh crap! I'm stuck please help me!</h1>
+<h2>This youtube video should help</h2>
+<p><iframe src="//www.youtube.com/embed/jYiaq782Gac?autoplay=0&amp;fs=1&amp;iv_load_policy=3&amp;showinfo=1&amp;rel=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;vq=hd720&amp;origin=https" width="788.54" height="443" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"><div><small><a href="https://youtubeembedcode.com/de/">youtubeembedcode.com/de/</a></small></div><div><small><a href="https://embedgooglemaps.com">Google maps embed</a></small></div><div><small><a href="https://youtubeembedcode.com/en">youtubeembedcode.com/en/</a></small></div><div><small><a href="https://embedfbvideo.com">Embed facebook video</a></small></div><div><small><a href="https://youtubeembedcode.com/es/">youtubeembedcode.com/es/</a></small></div><div><small><a href="https://embedfbvideo.com">Embed facebook video</a></small></div></iframe></p>
+<h2 class="subtitle">Need help? We've got you covered - join the Discord so our community can help you out!</h2>
+</div>
+</div>
+<div class="box is-flex is-mpadding is-marginless"><a class="is-flex" href="/discord"><img class="discord-logo" src="https://cdn.iconscout.com/icon/free/png-256/discord-2752210-2285027.png" /></a>
+<div class="clickhere-title is-flex is-vcentered">
+<h1 class="title">Click here to join our Discord!</h1>
+</div>
+</div>
+<div class="box is-block is-paddingless is-marginless is-waiting">
+<div class="columns is-flex is-paddingless is-marginless">
+<div class="column is-flex is-vcentered">
+<div>
+<h1 class="title is-left">Waiting for verification!</h1>
+<h2 class="subtitle">Follow the simple instructions above and once you're done reload this page!</h2>
+</div>
+</div>
+<div class="column icon-block">
+<div class="loading-anim">&nbsp;</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>{% endblock %}</p>
