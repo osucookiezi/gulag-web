@@ -14,7 +14,7 @@
 <link rel="stylesheet" href="/static/css/pages/leaderboard.css">
 
 <div id="leaderboard">
-    <div class="leaderboard-banner main-banner">
+    <div class="leaderboard-banner main-banner" style="background: url(&quot;https://nekos.cc/static/profbackgrounds/1001.jpg&quot;);">
         <div class="main-selector">
             <a :href="'/leaderboard/osu/'+sort+'/'+mods" :class="'mode-select '+(mode == 'std' ? '--selected ' : '')"
                 @click="LoadLeaderboard(sort, 'std', mods)">
@@ -83,6 +83,7 @@
                             <td class="t-column column-player-rank">#<% index + 1 %>
                             </td>
                             <td class="t-column column-player-name is-lefttext">
+                                <img :src="'/static/images/flags/'+user.country.toUpperCase()+'.png'" class="lb-flag">
                                 <a :href="'/u/'+user.user_id"><% user.username %></a>
                             </td>
                             <td v-if="sort == 'pp' || sort == 'rscore'" class="t-column">
